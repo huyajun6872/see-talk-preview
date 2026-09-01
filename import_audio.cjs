@@ -1,5 +1,9 @@
-// 将外部音频目录的 mp3 复制到项目 public/audio，并在 index.json 中登记 audio 字段
+// 将外部音频目录的音频复制到项目 public/audio，并在 index.json 中登记 audio 字段
 // 文件名与卡片名（去掉 .json）一一对应；带 _20240408_ 时间戳的重复副本跳过
+//
+// 典型流程：
+//   1) node import_audio.cjs        # 复制原始 mp3
+//   2) node compress_audio.cjs 96000 # 压缩为 96kbps 单声道 m4a（推荐，大幅减少体积与卡顿）
 const fs = require('fs')
 const path = require('path')
 
@@ -10,11 +14,11 @@ const IDX = path.join(PUB, 'data', 'index.json')
 
 fs.mkdirSync(OUT, { recursive: true })
 
-// 源音频：跳过重复副本
-const srcFiles = fs.readdirSync(AUDIO_SRC).filter(f => f.endsWith('.mp3') && !/_\d{8}_\d{6}\.mp3$/.test(f))
+// 源音频：跳过重复副本（支持 mp3 / m4a）
+const srcFiles = fs.readdirSync(AUDIO_SRC).filter(f => /\.(mp3|m4a)$/i.test(f) && !/_\d{8}_\d{6}\./.test(f))
 
 const idx = JSON.parse(fs.readFileSync(IDX, 'utf8'))
-const byStem = new Map(srcFiles.map(f => [f.replace(/\.mp3$/, ''), f]))
+const byStem = new Map(srcFiles.map(f => [f.replace(/\.(mp3|m4a)$/i, ''), f]))
 
 let copied = 0
 const skipped = []
