@@ -2,10 +2,13 @@
 import { ref, computed, onMounted, watch } from 'vue'
 import ImageView from './components/ImageView.vue'
 import TextList from './components/TextList.vue'
+import AudioBar from './components/AudioBar.vue'
 import { useSpeech, speakingId } from './composables/useSpeech.ts'
+import { usePageAudio } from './composables/usePageAudio.ts'
 import { langOf } from './utils/lang'
 
 const { speak, speakSequence, stop, sequencing, loop } = useSpeech()
+const pageAudio = usePageAudio()
 
 const files = ref([])
 const current = ref(null)
@@ -31,6 +34,10 @@ async function select(f) {
   loading.value = true
   activeId.value = null
   stop()
+  // 切换到该卡片对应的整页音频（预加载，不自动播放）
+  // 注意：只编码文件名，目录分隔符需保留（否则 audio/ 会被编码成 audio%2F）
+  const audioName = String(f.audio || '').split('/').pop()
+  pageAudio.load(audioName ? base + 'audio/' + encodeURIComponent(audioName) : '', f.title)
   const res = await fetch(base + 'data/' + encodeURIComponent(f.file))
   data.value = await res.json()
   loading.value = false
@@ -40,14 +47,22 @@ function onActivate(id) {
   const t = data.value?.texts.find(x => x.id === id)
   if (!t) return
   activeId.value = id
+  pageAudio.pause()   // 逐条朗读与整页音频互斥
   speak(t.text, toLang(t.text), id)
 }
 
 function playAll() {
   if (!data.value) return
   stop()
+  pageAudio.pause()
   const items = data.value.texts.map(t => ({ text: t.text, lang: toLang(t.text), id: t.id }))
   speakSequence(items)
+}
+
+// 播放整页音频时，停止逐条朗读
+function onPageToggle() {
+  if (!pageAudio.playing.value) stop()
+  pageAudio.toggle()
 }
 
 function setActive(id) { activeId.value = id }
@@ -84,7 +99,9 @@ watch(current, () => { window.scrollTo(0, 0) })
       </div>
     </header>
 
-    <p class="tip">点击图片上的透明区域或下方列表条目即可朗读；中文用「冰糖」、英文用「Mia」音色。</p>
+    <p class="tip">
+      下方「整页音频」是本页配套原声；点击图片或列表条目可逐条朗读（中文用「冰糖」、英文用「Mia」音色）。两者互斥。
+    </p>
 
     <main class="content" v-if="data && !loading">
       <section class="left">
@@ -95,6 +112,20 @@ watch(current, () => { window.scrollTo(0, 0) })
           @hover="setActive"
           @leave="clearActive"
           @click="onActivate"
+        />
+        <AudioBar
+          v-if="current?.audio"
+          :title="pageAudio.title.value"
+          :src="pageAudio.src.value"
+          :playing="pageAudio.playing.value"
+          :loading="pageAudio.loading.value"
+          :error="pageAudio.error.value"
+          :current-time="pageAudio.currentTime.value"
+          :duration="pageAudio.duration.value"
+          @toggle="onPageToggle"
+          @replay="pageAudio.replay"
+          @seek="pageAudio.seek"
+          @skip="pageAudio.skip"
         />
       </section>
       <aside class="right">
