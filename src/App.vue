@@ -18,8 +18,10 @@ function toLang(text) {
   return langOf(text) === 'zh' ? 'zh-CN' : 'en-GB'
 }
 
+const base = import.meta.env.BASE_URL
+
 onMounted(async () => {
-  const res = await fetch('/data/index.json')
+  const res = await fetch(base + 'data/index.json')
   files.value = await res.json()
   if (files.value.length) select(files.value[0])
 })
@@ -29,7 +31,7 @@ async function select(f) {
   loading.value = true
   activeId.value = null
   stop()
-  const res = await fetch('/data/' + encodeURIComponent(f.file))
+  const res = await fetch(base + 'data/' + encodeURIComponent(f.file))
   data.value = await res.json()
   loading.value = false
 }

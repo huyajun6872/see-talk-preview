@@ -1,6 +1,8 @@
 <script setup>
 import { langOf } from '../utils/lang'
 
+const base = import.meta.env.BASE_URL
+
 const props = defineProps({
   data: { type: Object, required: true },
   activeId: { type: Number, default: null },
@@ -11,7 +13,7 @@ const emit = defineEmits(['hover', 'leave', 'click'])
 
 <template>
   <div class="stage" :style="{ aspectRatio: data.width + ' / ' + data.height }">
-    <img class="bg" :src="'/images/' + encodeURIComponent(data.image)" :alt="data.image" />
+    <img class="bg" :src="base + 'images/' + encodeURIComponent(data.image)" :alt="data.image" />
     <!-- 透明可点击热区：点击触发朗读，不遮挡原图文字 -->
     <button
       v-for="t in data.texts"
