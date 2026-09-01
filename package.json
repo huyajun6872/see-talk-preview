@@ -15,6 +15,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.0",
     "gh-pages": "^6.3.0",
+    "puppeteer-core": "^24.43.1",
     "vite": "^5.2.0"
   }
 }
