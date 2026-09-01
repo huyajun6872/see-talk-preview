@@ -23,10 +23,36 @@ function toLang(text) {
 
 const base = import.meta.env.BASE_URL
 
+/** 由 index 项得到可直接请求的音频 URL（只编码文件名，保留目录分隔符） */
+function audioUrl(item) {
+  const name = String(item?.audio || '').split('/').pop()
+  return name ? base + 'audio/' + encodeURIComponent(name) : ''
+}
+
+/** 预取相邻卡片的音频，切换过去时可立即播放 */
+function prefetchNeighbors(f) {
+  const i = files.value.findIndex(x => x.file === f.file)
+  if (i < 0) return
+  // 优先下一张（更可能被访问），其次上一张
+  const next = files.value[i + 1]
+  const prev = files.value[i - 1]
+  if (next) pageAudio.prefetch(audioUrl(next))
+  if (prev) pageAudio.prefetch(audioUrl(prev))
+}
+
 onMounted(async () => {
   const res = await fetch(base + 'data/index.json')
   files.value = await res.json()
   if (files.value.length) select(files.value[0])
+
+  // 首次交互时预热当前音频（解锁播放并触发缓冲），降低首播延迟
+  const warm = () => {
+    pageAudio.warmup()
+    window.removeEventListener('pointerdown', warm)
+    window.removeEventListener('keydown', warm)
+  }
+  window.addEventListener('pointerdown', warm, { once: false })
+  window.addEventListener('keydown', warm, { once: false })
 })
 
 async function select(f) {
@@ -34,13 +60,13 @@ async function select(f) {
   loading.value = true
   activeId.value = null
   stop()
-  // 切换到该卡片对应的整页音频（预加载，不自动播放）
-  // 注意：只编码文件名，目录分隔符需保留（否则 audio/ 会被编码成 audio%2F）
-  const audioName = String(f.audio || '').split('/').pop()
-  pageAudio.load(audioName ? base + 'audio/' + encodeURIComponent(audioName) : '', f.title)
+  // 切换到该卡片对应的音频：preload=auto 会立即开始缓冲整段
+  pageAudio.load(audioUrl(f), f.title)
+  // 数据请求返回后再预取相邻项，避免与当前音频争抢带宽
   const res = await fetch(base + 'data/' + encodeURIComponent(f.file))
   data.value = await res.json()
   loading.value = false
+  setTimeout(() => prefetchNeighbors(f), 800)
 }
 
 function onActivate(id) {
@@ -119,8 +145,10 @@ watch(current, () => { window.scrollTo(0, 0) })
           :src="pageAudio.src.value"
           :playing="pageAudio.playing.value"
           :loading="pageAudio.loading.value"
+          :waiting="pageAudio.waiting.value"
           :error="pageAudio.error.value"
           :current-time="pageAudio.currentTime.value"
+          :buffered-end="pageAudio.bufferedEnd.value"
           :duration="pageAudio.duration.value"
           @toggle="onPageToggle"
           @replay="pageAudio.replay"

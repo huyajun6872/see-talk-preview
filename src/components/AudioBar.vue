@@ -7,8 +7,10 @@ const props = defineProps({
   src: { type: String, default: '' },
   playing: { type: Boolean, default: false },
   loading: { type: Boolean, default: false },
+  waiting: { type: Boolean, default: false },
   error: { type: String, default: '' },
   currentTime: { type: Number, default: 0 },
+  bufferedEnd: { type: Number, default: 0 },
   duration: { type: Number, default: 0 }
 })
 const emit = defineEmits(['toggle', 'replay', 'seek', 'skip'])
@@ -16,6 +18,23 @@ const emit = defineEmits(['toggle', 'replay', 'seek', 'skip'])
 const progress = computed(() => {
   if (!props.duration) return 0
   return Math.min(props.currentTime / props.duration, 1) * 100
+})
+
+/** 已缓冲百分比，用于在轨道上叠加显示缓冲区间 */
+const bufferedPct = computed(() => {
+  if (!props.duration || !props.bufferedEnd) return 0
+  return Math.min(props.bufferedEnd / props.duration, 1) * 100
+})
+
+/** 缓冲是否已完成（够用） */
+const ready = computed(() => props.duration > 0 && props.bufferedEnd >= props.duration * 0.98)
+
+const statusText = computed(() => {
+  if (props.error) return ''
+  if (props.waiting) return '缓冲中…'
+  if (props.loading) return '加载中…'
+  if (props.src && !ready.value && bufferedPct.value > 0) return '缓冲中…'
+  return ''
 })
 
 function onSeek(e) {
@@ -29,8 +48,9 @@ function onSeek(e) {
       <span class="label">整页音频</span>
       <span class="name" :title="title">{{ title || '—' }}</span>
       <span v-if="error" class="err">{{ error }}</span>
-      <span v-else-if="loading" class="hint">加载中…</span>
-      <span v-else class="time">{{ mmss(currentTime) }} / {{ mmss(duration) }}</span>
+      <span v-else-if="statusText" class="hint">{{ statusText }}</span>
+      <span v-else-if="ready" class="ok">已就绪</span>
+      <span class="time">{{ mmss(currentTime) }} / {{ mmss(duration) }}</span>
     </div>
 
     <div class="row">
@@ -41,17 +61,22 @@ function onSeek(e) {
       <button class="mini" :disabled="!src" @click="emit('skip', 15)" title="前进 15 秒">15s ↻</button>
       <button class="mini" :disabled="!src" @click="emit('replay')" title="从头播放">⟲ 重播</button>
 
-      <input
-        class="seek"
-        type="range"
-        min="0"
-        max="100"
-        step="0.1"
-        :value="progress"
-        :disabled="!duration"
-        @input="onSeek"
-        aria-label="播放进度"
-      />
+      <div class="track">
+        <!-- 缓冲区间 -->
+        <div class="buffered" :style="{ width: bufferedPct + '%' }"></div>
+        <!-- 播放进度条本体 -->
+        <input
+          class="seek"
+          type="range"
+          min="0"
+          max="100"
+          step="0.1"
+          :value="progress"
+          :disabled="!duration"
+          @input="onSeek"
+          aria-label="播放进度"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -75,7 +100,8 @@ function onSeek(e) {
   flex: 1 1 auto; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #333;
 }
 .time { font-variant-numeric: tabular-nums; flex: 0 0 auto; }
-.hint { color: #999; flex: 0 0 auto; }
+.hint { color: #e08b00; flex: 0 0 auto; }
+.ok { color: #2b8; flex: 0 0 auto; }
 .err { color: #d33; flex: 0 0 auto; }
 .row { display: flex; align-items: center; gap: 8px; }
 .play {
@@ -89,5 +115,16 @@ function onSeek(e) {
 }
 .mini:hover:not(:disabled) { background: #f0f5ff; border-color: #7aa7ff; }
 .mini:disabled { opacity: .5; cursor: default; }
-.seek { flex: 1 1 auto; min-width: 80px; accent-color: #ff9500; cursor: pointer; }
+
+/* 轨道：底层显示缓冲，上层是可拖动的进度条 */
+.track { position: relative; flex: 1 1 auto; min-width: 80px; height: 20px; display: flex; align-items: center; }
+.buffered {
+  position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+  height: 6px; background: #d9d9d9; border-radius: 3px; pointer-events: none;
+  transition: width 0.2s linear;
+}
+.seek {
+  position: relative; width: 100%; margin: 0;
+  accent-color: #ff9500; cursor: pointer; background: transparent;
+}
 </style>
