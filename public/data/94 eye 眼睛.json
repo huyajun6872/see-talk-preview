@@ -2,8 +2,36 @@
   "image": "94 eye 眼睛.png",
   "width": 3882,
   "height": 5188,
-  "text_count": 41,
+  "text_count": 21,
   "texts": [
+    {
+      "id": 1,
+      "text": "94",
+      "confidence": 1,
+      "low_conf": false,
+      "points_norm": [
+        [
+          0,
+          0
+        ],
+        [
+          0.0984,
+          0
+        ],
+        [
+          0.0984,
+          0.04819
+        ],
+        [
+          0,
+          0.04819
+        ]
+      ],
+      "x": 0,
+      "y": 0,
+      "w": 0.0984,
+      "h": 0.04819
+    },
     {
       "id": 2,
       "text": "关于眼睛可以教的英语",
@@ -33,32 +61,60 @@
       "h": 0.07961
     },
     {
-      "id": 1,
-      "text": "94",
-      "confidence": 1,
+      "id": 3,
+      "text": "眼睛",
+      "confidence": 0.9998,
       "low_conf": false,
       "points_norm": [
         [
-          0,
-          0
+          0.10665,
+          0.0771
         ],
         [
-          0.0984,
-          0
+          0.18006,
+          0.07826
         ],
         [
-          0.0984,
-          0.04819
+          0.17877,
+          0.12317
         ],
         [
-          0,
-          0.04819
+          0.10536,
+          0.12201
         ]
       ],
-      "x": 0,
-      "y": 0,
-      "w": 0.0984,
-      "h": 0.04819
+      "x": 0.10536,
+      "y": 0.0771,
+      "w": 0.0747,
+      "h": 0.04607
+    },
+    {
+      "id": 4,
+      "text": "eye",
+      "confidence": 0.9998,
+      "low_conf": false,
+      "points_norm": [
+        [
+          0.10665,
+          0.0771
+        ],
+        [
+          0.18006,
+          0.07826
+        ],
+        [
+          0.17877,
+          0.12317
+        ],
+        [
+          0.10536,
+          0.12201
+        ]
+      ],
+      "x": 0.10536,
+      "y": 0.0771,
+      "w": 0.0747,
+      "h": 0.04607
     },
     {
       "id": 5,
@@ -89,7 +145,7 @@
       "h": 0.02641
     },
     {
-      "id": 4,
+      "id": 6,
       "text": "Do your eyes feel itchy?",
       "confidence": 0.9972,
       "low_conf": false,
@@ -118,34 +174,6 @@
     },
     {
       "id": 7,
-      "text": "5",
-      "confidence": 0.9998,
-      "low_conf": false,
-      "points_norm": [
-        [
-          0.92478,
-          0.13146
-        ],
-        [
-          0.93045,
-          0.13146
-        ],
-        [
-          0.93045,
-          0.13647
-        ],
-        [
-          0.92478,
-          0.13647
-        ]
-      ],
-      "x": 0.92478,
-      "y": 0.13146,
-      "w": 0.00567,
-      "h": 0.00501
-    },
-    {
-      "id": 8,
       "text": "别揉眼睛",
       "confidence": 0.9951,
       "low_conf": false,
@@ -173,7 +201,7 @@
       "h": 0.02718
     },
     {
-      "id": 6,
+      "id": 8,
       "text": "Don't rub your eyes!",
       "confidence": 0.9911,
       "low_conf": false,
@@ -201,7 +229,7 @@
       "h": 0.03894
     },
     {
-      "id": 10,
+      "id": 9,
       "text": "发痒的",
       "confidence": 0.9997,
       "low_conf": false,
@@ -229,7 +257,7 @@
       "h": 0.02795
     },
     {
-      "id": 9,
+      "id": 10,
       "text": "itchy",
       "confidence": 1,
       "low_conf": false,
@@ -257,7 +285,7 @@
       "h": 0.03373
     },
     {
-      "id": 12,
+      "id": 11,
       "text": "揉/搓",
       "confidence": 0.9978,
       "low_conf": false,
@@ -285,7 +313,7 @@
       "h": 0.0293
     },
     {
-      "id": 11,
+      "id": 12,
       "text": "rub",
       "confidence": 1,
       "low_conf": false,
@@ -313,7 +341,7 @@
       "h": 0.02679
     },
     {
-      "id": 17,
+      "id": 13,
       "text": "不要盯着太阳看",
       "confidence": 0.9999,
       "low_conf": false,
@@ -341,7 +369,7 @@
       "h": 0.02564
     },
     {
-      "id": 13,
+      "id": 14,
       "text": "Don't stare at the sun.",
       "confidence": 0.9999,
       "low_conf": false,
@@ -369,8 +397,8 @@
       "h": 0.06361
     },
     {
-      "id": 18,
-      "text": "把眼睛瞪得 大大的",
+      "id": 15,
+      "text": "把眼睛瞪得大大的",
       "confidence": 0.9991,
       "low_conf": false,
       "points_norm": [
@@ -397,7 +425,7 @@
       "h": 0.05744
     },
     {
-      "id": 14,
+      "id": 16,
       "text": "Open your eyes wide.",
       "confidence": 0.9958,
       "low_conf": false,
@@ -425,7 +453,7 @@
       "h": 0.07016
     },
     {
-      "id": 21,
+      "id": 17,
       "text": "凝视",
       "confidence": 0.9998,
       "low_conf": false,
@@ -453,7 +481,7 @@
       "h": 0.02699
     },
     {
-      "id": 20,
+      "id": 18,
       "text": "stare at",
       "confidence": 1,
       "low_conf": false,
@@ -481,7 +509,7 @@
       "h": 0.02294
     },
     {
-      "id": 24,
+      "id": 19,
       "text": "大范围的",
       "confidence": 1,
       "low_conf": false,
@@ -509,7 +537,7 @@
       "h": 0.02795
     },
     {
-      "id": 22,
+      "id": 20,
       "text": "wide",
       "confidence": 1,
       "low_conf": false,
@@ -537,7 +565,7 @@
       "h": 0.02679
     },
     {
-      "id": 25,
+      "id": 21,
       "text": "你流眼泪了",
       "confidence": 1,
       "low_conf": false,
@@ -565,7 +593,7 @@
       "h": 0.02718
     },
     {
-      "id": 23,
+      "id": 22,
       "text": "You have tears in your eyes.",
       "confidence": 0.9849,
       "low_conf": false,
@@ -593,7 +621,7 @@
       "h": 0.03277
     },
     {
-      "id": 29,
+      "id": 23,
       "text": "你眼睛进东西了",
       "confidence": 0.9998,
       "low_conf": false,
@@ -621,7 +649,7 @@
       "h": 0.02699
     },
     {
-      "id": 26,
+      "id": 24,
       "text": "You have something in your eye.",
       "confidence": 0.9969,
       "low_conf": false,
@@ -649,7 +677,7 @@
       "h": 0.07248
     },
     {
-      "id": 30,
+      "id": 25,
       "text": "眼泪",
       "confidence": 0.9998,
       "low_conf": false,
@@ -677,7 +705,7 @@
       "h": 0.02814
     },
     {
-      "id": 28,
+      "id": 26,
       "text": "tear",
       "confidence": 1,
       "low_conf": false,
@@ -705,7 +733,7 @@
       "h": 0.02409
     },
     {
-      "id": 32,
+      "id": 27,
       "text": "某物",
       "confidence": 0.9999,
       "low_conf": false,
@@ -733,7 +761,7 @@
       "h": 0.02795
     },
     {
-      "id": 31,
+      "id": 28,
       "text": "something",
       "confidence": 1,
       "low_conf": false,
@@ -761,7 +789,7 @@
       "h": 0.0345
     },
     {
-      "id": 34,
+      "id": 29,
       "text": "吹",
       "confidence": 0.9994,
       "low_conf": false,
@@ -789,7 +817,7 @@
       "h": 0.02891
     },
     {
-      "id": 33,
+      "id": 30,
       "text": "blow",
       "confidence": 1,
       "low_conf": false,
@@ -817,7 +845,7 @@
       "h": 0.02737
     },
     {
-      "id": 36,
+      "id": 31,
       "text": "眼屎",
       "confidence": 0.9908,
       "low_conf": false,
@@ -845,7 +873,7 @@
       "h": 0.02737
     },
     {
-      "id": 35,
+      "id": 32,
       "text": "sleep",
       "confidence": 1,
       "low_conf": false,
@@ -873,7 +901,7 @@
       "h": 0.02968
     },
     {
-      "id": 39,
+      "id": 33,
       "text": "让我帮你吹出来",
       "confidence": 0.9999,
       "low_conf": false,
@@ -901,7 +929,7 @@
       "h": 0.02583
     },
     {
-      "id": 37,
+      "id": 34,
       "text": "Let me blow it out for you.",
       "confidence": 0.998,
       "low_conf": false,
@@ -929,7 +957,7 @@
       "h": 0.03007
     },
     {
-      "id": 41,
+      "id": 35,
       "text": "洗个脸，把眼屎擦掉",
       "confidence": 0.9987,
       "low_conf": false,
@@ -957,7 +985,7 @@
       "h": 0.02255
     },
     {
-      "id": 38,
+      "id": 36,
       "text": "Wash your face and wipe the sleep from your eyes.",
       "confidence": 1,
       "low_conf": false,
@@ -983,34 +1011,6 @@
       "y": 0.91018,
       "w": 0.3117,
       "h": 0.07055
-    },
-    {
-      "id": 3,
-      "text": "Eye",
-      "confidence": 0.9998,
-      "low_conf": false,
-      "points_norm": [
-        [
-          0.10665,
-          0.0771
-        ],
-        [
-          0.18006,
-          0.07826
-        ],
-        [
-          0.17877,
-          0.12317
-        ],
-        [
-          0.10536,
-          0.12201
-        ]
-      ],
-      "x": 0.10536,
-      "y": 0.0771,
-      "w": 0.0747,
-      "h": 0.04607
     }
   ]
 }

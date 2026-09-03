@@ -633,56 +633,56 @@
     "file": "91 scale 秤.json",
     "image": "91 scale 秤.png",
     "title": "91 scale 秤",
-    "blocks": 49,
+    "blocks": 32,
     "audio": "audio/91 scale 秤.m4a"
   },
   {
     "file": "92 exercise 做运动.json",
     "image": "92 exercise 做运动.png",
     "title": "92 exercise 做运动",
-    "blocks": 41,
+    "blocks": 30,
     "audio": "audio/92 exercise 做运动.m4a"
   },
   {
     "file": "93 toy car 玩具车.json",
     "image": "93 toy car 玩具车.png",
     "title": "93 toy car 玩具车",
-    "blocks": 47,
+    "blocks": 24,
     "audio": "audio/93 toy car 玩具车.m4a"
   },
   {
     "file": "94 eye 眼睛.json",
     "image": "94 eye 眼睛.png",
     "title": "94 eye 眼睛",
-    "blocks": 41,
+    "blocks": 21,
     "audio": "audio/94 eye 眼睛.m4a"
   },
   {
     "file": "95 play doctor 医生游戏.json",
     "image": "95 play doctor 医生游戏.png",
     "title": "95 play doctor 医生游戏",
-    "blocks": 44,
+    "blocks": 32,
     "audio": "audio/95 play doctor 医生游戏.m4a"
   },
   {
     "file": "96 bike 自行车.json",
     "image": "96 bike 自行车.png",
     "title": "96 bike 自行车",
-    "blocks": 39,
+    "blocks": 28,
     "audio": "audio/96 bike 自行车.m4a"
   },
   {
     "file": "97 talking pen 点读笔.json",
     "image": "97 talking pen 点读笔.png",
     "title": "97 talking pen 点读笔",
-    "blocks": 39,
+    "blocks": 30,
     "audio": "audio/97 talking pen 点读笔.m4a"
   },
   {
     "file": "98 box 盒子.json",
     "image": "98 box 盒子.png",
     "title": "98 box 盒子",
-    "blocks": 40,
+    "blocks": 32,
     "audio": "audio/98 box 盒子.m4a"
   },
   {

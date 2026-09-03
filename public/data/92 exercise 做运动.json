@@ -2,36 +2,8 @@
   "image": "92 exercise 做运动.png",
   "width": 3882,
   "height": 5188,
-  "text_count": 41,
+  "text_count": 30,
   "texts": [
-    {
-      "id": 2,
-      "text": "关于运动可以教的英语",
-      "confidence": 0.9999,
-      "low_conf": false,
-      "points_norm": [
-        [
-          0.17362,
-          0
-        ],
-        [
-          1,
-          0
-        ],
-        [
-          1,
-          0.0771
-        ],
-        [
-          0.17311,
-          0.07421
-        ]
-      ],
-      "x": 0.17311,
-      "y": 0,
-      "w": 0.82689,
-      "h": 0.0771
-    },
     {
       "id": 1,
       "text": "92",
@@ -61,7 +33,91 @@
       "h": 0.04819
     },
     {
-      "id": 7,
+      "id": 2,
+      "text": "关于运动可以教的英语",
+      "confidence": 0.9999,
+      "low_conf": false,
+      "points_norm": [
+        [
+          0.17362,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0.0771
+        ],
+        [
+          0.17311,
+          0.07421
+        ]
+      ],
+      "x": 0.17311,
+      "y": 0,
+      "w": 0.82689,
+      "h": 0.0771
+    },
+    {
+      "id": 3,
+      "text": "做运动",
+      "confidence": 0.9999,
+      "low_conf": false,
+      "points_norm": [
+        [
+          0.05719,
+          0.07286
+        ],
+        [
+          0.23184,
+          0.0798
+        ],
+        [
+          0.22901,
+          0.12066
+        ],
+        [
+          0.05435,
+          0.11372
+        ]
+      ],
+      "x": 0.05435,
+      "y": 0.07286,
+      "w": 0.17749,
+      "h": 0.0478
+    },
+    {
+      "id": 4,
+      "text": "Exercise",
+      "confidence": 0.9999,
+      "low_conf": false,
+      "points_norm": [
+        [
+          0.05719,
+          0.07286
+        ],
+        [
+          0.23184,
+          0.0798
+        ],
+        [
+          0.22901,
+          0.12066
+        ],
+        [
+          0.05435,
+          0.11372
+        ]
+      ],
+      "x": 0.05435,
+      "y": 0.07286,
+      "w": 0.17749,
+      "h": 0.0478
+    },
+    {
+      "id": 5,
       "text": "伸展你的胳膊和腿",
       "confidence": 0.9998,
       "low_conf": false,
@@ -89,7 +145,7 @@
       "h": 0.02776
     },
     {
-      "id": 4,
+      "id": 6,
       "text": "Stretch your arms and legs.",
       "confidence": 1,
       "low_conf": false,
@@ -117,7 +173,7 @@
       "h": 0.06959
     },
     {
-      "id": 8,
+      "id": 7,
       "text": "弯腰触摸脚趾",
       "confidence": 0.9994,
       "low_conf": false,
@@ -145,7 +201,7 @@
       "h": 0.02968
     },
     {
-      "id": 6,
+      "id": 8,
       "text": "Bend and touch your toes.",
       "confidence": 0.9839,
       "low_conf": false,
@@ -173,7 +229,7 @@
       "h": 0.04202
     },
     {
-      "id": 10,
+      "id": 9,
       "text": "伸展",
       "confidence": 0.9998,
       "low_conf": false,
@@ -201,7 +257,7 @@
       "h": 0.02911
     },
     {
-      "id": 9,
+      "id": 10,
       "text": "stretch",
       "confidence": 1,
       "low_conf": false,
@@ -229,7 +285,7 @@
       "h": 0.02429
     },
     {
-      "id": 13,
+      "id": 11,
       "text": "弯腰",
       "confidence": 0.9999,
       "low_conf": false,
@@ -285,7 +341,7 @@
       "h": 0.02564
     },
     {
-      "id": 16,
+      "id": 13,
       "text": "和我一起跳上跳下",
       "confidence": 1,
       "low_conf": false,
@@ -313,7 +369,7 @@
       "h": 0.02814
     },
     {
-      "id": 11,
+      "id": 14,
       "text": "Jump up and down with me.",
       "confidence": 1,
       "low_conf": false,
@@ -341,7 +397,7 @@
       "h": 0.06593
     },
     {
-      "id": 17,
+      "id": 15,
       "text": "让我们一起做开合跳",
       "confidence": 1,
       "low_conf": false,
@@ -369,7 +425,7 @@
       "h": 0.03103
     },
     {
-      "id": 15,
+      "id": 16,
       "text": "Let's do some jumping jacks.",
       "confidence": 1,
       "low_conf": false,
@@ -397,7 +453,7 @@
       "h": 0.03065
     },
     {
-      "id": 19,
+      "id": 17,
       "text": "上上下下",
       "confidence": 1,
       "low_conf": false,
@@ -453,7 +509,7 @@
       "h": 0.03277
     },
     {
-      "id": 24,
+      "id": 19,
       "text": "开合跳",
       "confidence": 0.9999,
       "low_conf": false,
@@ -509,7 +565,7 @@
       "h": 0.06689
     },
     {
-      "id": 25,
+      "id": 21,
       "text": "让我们跑到终点线",
       "confidence": 0.9999,
       "low_conf": false,
@@ -537,7 +593,7 @@
       "h": 0.02968
     },
     {
-      "id": 21,
+      "id": 22,
       "text": "Let's race to the finish line.",
       "confidence": 1,
       "low_conf": false,
@@ -565,7 +621,7 @@
       "h": 0.06265
     },
     {
-      "id": 28,
+      "id": 23,
       "text": "单脚独立",
       "confidence": 0.9981,
       "low_conf": false,
@@ -593,7 +649,7 @@
       "h": 0.0266
     },
     {
-      "id": 26,
+      "id": 24,
       "text": "Balance on one foot.",
       "confidence": 0.9996,
       "low_conf": false,
@@ -621,7 +677,7 @@
       "h": 0.02756
     },
     {
-      "id": 29,
+      "id": 25,
       "text": "比赛",
       "confidence": 0.9996,
       "low_conf": false,
@@ -649,7 +705,7 @@
       "h": 0.02776
     },
     {
-      "id": 27,
+      "id": 26,
       "text": "race",
       "confidence": 1,
       "low_conf": false,
@@ -677,35 +733,7 @@
       "h": 0.02217
     },
     {
-      "id": 30,
-      "text": "INISH",
-      "confidence": 0.9999,
-      "low_conf": false,
-      "points_norm": [
-        [
-          0.82045,
-          0.70355
-        ],
-        [
-          1,
-          0.7022
-        ],
-        [
-          1,
-          0.73612
-        ],
-        [
-          0.82071,
-          0.73766
-        ]
-      ],
-      "x": 0.82045,
-      "y": 0.7022,
-      "w": 0.17955,
-      "h": 0.03547
-    },
-    {
-      "id": 32,
+      "id": 27,
       "text": "平衡",
       "confidence": 1,
       "low_conf": false,
@@ -733,7 +761,7 @@
       "h": 0.02814
     },
     {
-      "id": 31,
+      "id": 28,
       "text": "balance",
       "confidence": 1,
       "low_conf": false,
@@ -761,7 +789,7 @@
       "h": 0.02699
     },
     {
-      "id": 35,
+      "id": 29,
       "text": "呼吸",
       "confidence": 1,
       "low_conf": false,
@@ -789,7 +817,7 @@
       "h": 0.02699
     },
     {
-      "id": 33,
+      "id": 30,
       "text": "breath",
       "confidence": 1,
       "low_conf": false,
@@ -817,7 +845,7 @@
       "h": 0.02621
     },
     {
-      "id": 36,
+      "id": 31,
       "text": "滚动",
       "confidence": 0.9998,
       "low_conf": false,
@@ -845,7 +873,7 @@
       "h": 0.02968
     },
     {
-      "id": 34,
+      "id": 32,
       "text": "roll",
       "confidence": 0.9999,
       "low_conf": false,
@@ -873,7 +901,7 @@
       "h": 0.02737
     },
     {
-      "id": 41,
+      "id": 33,
       "text": "深吸一口气",
       "confidence": 0.9999,
       "low_conf": false,
@@ -901,7 +929,7 @@
       "h": 0.02602
     },
     {
-      "id": 37,
+      "id": 34,
       "text": "Take a deep breath.",
       "confidence": 1,
       "low_conf": false,
@@ -929,7 +957,7 @@
       "h": 0.06476
     },
     {
-      "id": 40,
+      "id": 35,
       "text": "来一个前滚翻",
       "confidence": 1,
       "low_conf": false,
@@ -957,7 +985,7 @@
       "h": 0.02756
     },
     {
-      "id": 38,
+      "id": 36,
       "text": "Do a forward roll.",
       "confidence": 0.9975,
       "low_conf": false,
@@ -983,34 +1011,6 @@
       "y": 0.92155,
       "w": 0.21741,
       "h": 0.02641
-    },
-    {
-      "id": 3,
-      "text": "Exercise",
-      "confidence": 0.9999,
-      "low_conf": false,
-      "points_norm": [
-        [
-          0.05719,
-          0.07286
-        ],
-        [
-          0.23184,
-          0.0798
-        ],
-        [
-          0.22901,
-          0.12066
-        ],
-        [
-          0.05435,
-          0.11372
-        ]
-      ],
-      "x": 0.05435,
-      "y": 0.07286,
-      "w": 0.17749,
-      "h": 0.0478
     }
   ]
 }
