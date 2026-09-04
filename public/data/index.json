@@ -563,70 +563,70 @@
     "file": "81 fish (吃)鱼.json",
     "image": "81 fish (吃)鱼.png",
     "title": "81 fish (吃)鱼",
-    "blocks": 46,
+    "blocks": 33,
     "audio": "audio/81 fish (吃)鱼.m4a"
   },
   {
     "file": "82 slippers 拖鞋.json",
     "image": "82 slippers 拖鞋.png",
     "title": "82 slippers 拖鞋",
-    "blocks": 45,
+    "blocks": 40,
     "audio": "audio/82 slippers 拖鞋.m4a"
   },
   {
     "file": "83 paper 纸.json",
     "image": "83 paper 纸.png",
     "title": "83 paper 纸",
-    "blocks": 43,
+    "blocks": 38,
     "audio": "audio/83 paper 纸.m4a"
   },
   {
     "file": "84 puzzle 拼图.json",
     "image": "84 puzzle 拼图.png",
     "title": "84 puzzle 拼图",
-    "blocks": 40,
+    "blocks": 20,
     "audio": "audio/84 puzzle 拼图.m4a"
   },
   {
     "file": "85 balcony 阳台.json",
     "image": "85 balcony 阳台.png",
     "title": "85 balcony 阳台",
-    "blocks": 49,
+    "blocks": 34,
     "audio": "audio/85 balcony 阳台.m4a"
   },
   {
     "file": "86 fruit 水果.json",
     "image": "86 fruit 水果.png",
     "title": "86 fruit 水果",
-    "blocks": 42,
+    "blocks": 24,
     "audio": "audio/86 fruit 水果.m4a"
   },
   {
     "file": "87 elevator 电梯.json",
     "image": "87 elevator 电梯.png",
     "title": "87 elevator 电梯",
-    "blocks": 41,
+    "blocks": 21,
     "audio": "audio/87 elevator 电梯.m4a"
   },
   {
     "file": "88 washing machine 洗衣机.json",
     "image": "88 washing machine 洗衣机.png",
     "title": "88 washing machine 洗衣机",
-    "blocks": 44,
+    "blocks": 21,
     "audio": "audio/88 washing machine 洗衣机.m4a"
   },
   {
     "file": "89 fridge 冰箱.json",
     "image": "89 fridge 冰箱.png",
     "title": "89 fridge 冰箱",
-    "blocks": 45,
+    "blocks": 17,
     "audio": "audio/89 fridge 冰箱.m4a"
   },
   {
     "file": "90 nose 鼻子.json",
     "image": "90 nose 鼻子.png",
     "title": "90 nose 鼻子",
-    "blocks": 37,
+    "blocks": 14,
     "audio": "audio/90 nose 鼻子.m4a"
   },
   {

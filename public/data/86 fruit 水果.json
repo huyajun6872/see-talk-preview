@@ -2,122 +2,10 @@
   "image": "86 fruit 水果.png",
   "width": 3882,
   "height": 5188,
-  "text_count": 42,
+  "text_count": 24,
   "texts": [
     {
-      "id": 2,
-      "text": "全子市市",
-      "confidence": 0.4745,
-      "low_conf": true,
-      "points_norm": [
-        [
-          0.17053,
-          0
-        ],
-        [
-          1,
-          0
-        ],
-        [
-          1,
-          0.07884
-        ],
-        [
-          0.17002,
-          0.07594
-        ]
-      ],
-      "x": 0.17002,
-      "y": 0,
-      "w": 0.82998,
-      "h": 0.07884
-    },
-    {
       "id": 1,
-      "text": "98",
-      "confidence": 1,
-      "low_conf": false,
-      "points_norm": [
-        [
-          0,
-          0
-        ],
-        [
-          0.10175,
-          0
-        ],
-        [
-          0.10175,
-          0.04973
-        ],
-        [
-          0,
-          0.04973
-        ]
-      ],
-      "x": 0,
-      "y": 0,
-      "w": 0.10175,
-      "h": 0.04973
-    },
-    {
-      "id": 6,
-      "text": "全和",
-      "confidence": 0.1619,
-      "low_conf": true,
-      "points_norm": [
-        [
-          0.57367,
-          0.13685
-        ],
-        [
-          0.75193,
-          0.13628
-        ],
-        [
-          0.75193,
-          0.16288
-        ],
-        [
-          0.57393,
-          0.16345
-        ]
-      ],
-      "x": 0.57367,
-      "y": 0.13628,
-      "w": 0.17826,
-      "h": 0.02718
-    },
-    {
-      "id": 4,
-      "text": "Pe   ana.",
-      "confidence": 0.7252,
-      "low_conf": true,
-      "points_norm": [
-        [
-          0.56028,
-          0.10659
-        ],
-        [
-          0.76687,
-          0.10659
-        ],
-        [
-          0.76687,
-          0.13126
-        ],
-        [
-          0.56028,
-          0.13126
-        ]
-      ],
-      "x": 0.56028,
-      "y": 0.10659,
-      "w": 0.20659,
-      "h": 0.02467
-    },
-    {
-      "id": 9,
       "text": "橙子富含维生素C",
       "confidence": 0.9998,
       "low_conf": false,
@@ -145,10 +33,10 @@
       "h": 0.02776
     },
     {
-      "id": 5,
-      "text": "Eran   fu of vitamin C.",
-      "confidence": 0.7175,
-      "low_conf": true,
+      "id": 2,
+      "text": "Oranges are full of vitamin C.",
+      "confidence": 0.99,
+      "low_conf": false,
       "points_norm": [
         [
           0.01726,
@@ -173,7 +61,7 @@
       "h": 0.06785
     },
     {
-      "id": 10,
+      "id": 3,
       "text": "剥皮",
       "confidence": 0.9986,
       "low_conf": false,
@@ -201,7 +89,7 @@
       "h": 0.02891
     },
     {
-      "id": 8,
+      "id": 4,
       "text": "peel",
       "confidence": 1,
       "low_conf": false,
@@ -229,7 +117,7 @@
       "h": 0.03103
     },
     {
-      "id": 13,
+      "id": 5,
       "text": "维生素",
       "confidence": 0.9999,
       "low_conf": false,
@@ -257,7 +145,7 @@
       "h": 0.02699
     },
     {
-      "id": 11,
+      "id": 6,
       "text": "vitamin",
       "confidence": 1,
       "low_conf": false,
@@ -285,8 +173,8 @@
       "h": 0.02429
     },
     {
-      "id": 16,
-      "text": "吃水果前要把它 洗干净",
+      "id": 7,
+      "text": "吃水果前要把它洗干净",
       "confidence": 0.9955,
       "low_conf": false,
       "points_norm": [
@@ -313,7 +201,7 @@
       "h": 0.05745
     },
     {
-      "id": 12,
+      "id": 8,
       "text": "Wash the fruit before we eat it.",
       "confidence": 0.9905,
       "low_conf": false,
@@ -341,7 +229,7 @@
       "h": 0.06438
     },
     {
-      "id": 17,
+      "id": 9,
       "text": "这种水果叫作猕猴桃",
       "confidence": 0.9997,
       "low_conf": false,
@@ -369,7 +257,7 @@
       "h": 0.02911
     },
     {
-      "id": 15,
+      "id": 10,
       "text": "This fruit is called a kiwi.",
       "confidence": 0.9998,
       "low_conf": false,
@@ -397,35 +285,7 @@
       "h": 0.02833
     },
     {
-      "id": 19,
-      "text": "NAME:",
-      "confidence": 0.9998,
-      "low_conf": false,
-      "points_norm": [
-        [
-          0.0407,
-          0.41808
-        ],
-        [
-          0.08475,
-          0.41712
-        ],
-        [
-          0.08527,
-          0.42868
-        ],
-        [
-          0.04122,
-          0.42965
-        ]
-      ],
-      "x": 0.0407,
-      "y": 0.41712,
-      "w": 0.04456,
-      "h": 0.01253
-    },
-    {
-      "id": 21,
+      "id": 11,
       "text": "清洗",
       "confidence": 0.9999,
       "low_conf": false,
@@ -453,7 +313,7 @@
       "h": 0.02968
     },
     {
-      "id": 20,
+      "id": 12,
       "text": "wash",
       "confidence": 1,
       "low_conf": false,
@@ -481,7 +341,7 @@
       "h": 0.02737
     },
     {
-      "id": 23,
+      "id": 13,
       "text": "叫作",
       "confidence": 1,
       "low_conf": false,
@@ -509,7 +369,7 @@
       "h": 0.02872
     },
     {
-      "id": 22,
+      "id": 14,
       "text": "called",
       "confidence": 1,
       "low_conf": false,
@@ -537,7 +397,7 @@
       "h": 0.02679
     },
     {
-      "id": 25,
+      "id": 15,
       "text": "小块",
       "confidence": 0.9999,
       "low_conf": false,
@@ -565,7 +425,7 @@
       "h": 0.02776
     },
     {
-      "id": 24,
+      "id": 16,
       "text": "small pieces",
       "confidence": 0.9997,
       "low_conf": false,
@@ -593,8 +453,8 @@
       "h": 0.03238
     },
     {
-      "id": 28,
-      "text": "让我们用新鲜水果榨果 汁",
+      "id": 17,
+      "text": "让我们用新鲜水果榨果汁",
       "confidence": 0.9999,
       "low_conf": false,
       "points_norm": [
@@ -621,7 +481,7 @@
       "h": 0.0588
     },
     {
-      "id": 26,
+      "id": 18,
       "text": "Let's make some fruit juice with the fresh fruit.",
       "confidence": 0.9938,
       "low_conf": false,
@@ -649,7 +509,7 @@
       "h": 0.07267
     },
     {
-      "id": 33,
+      "id": 19,
       "text": "把西瓜切成小块",
       "confidence": 0.9999,
       "low_conf": false,
@@ -677,7 +537,7 @@
       "h": 0.02853
     },
     {
-      "id": 29,
+      "id": 20,
       "text": "Cut the watermelon into small pieces.",
       "confidence": 1,
       "low_conf": false,
@@ -705,7 +565,7 @@
       "h": 0.06901
     },
     {
-      "id": 34,
+      "id": 21,
       "text": "果汁",
       "confidence": 0.9999,
       "low_conf": false,
@@ -733,7 +593,7 @@
       "h": 0.02853
     },
     {
-      "id": 32,
+      "id": 22,
       "text": "fruit juice",
       "confidence": 1,
       "low_conf": false,
@@ -761,7 +621,7 @@
       "h": 0.03084
     },
     {
-      "id": 36,
+      "id": 23,
       "text": "成熟的",
       "confidence": 1,
       "low_conf": false,
@@ -789,7 +649,7 @@
       "h": 0.02699
     },
     {
-      "id": 35,
+      "id": 24,
       "text": "ripe",
       "confidence": 1,
       "low_conf": false,
@@ -817,7 +677,7 @@
       "h": 0.03142
     },
     {
-      "id": 38,
+      "id": 25,
       "text": "腐烂的",
       "confidence": 0.9999,
       "low_conf": false,
@@ -845,7 +705,7 @@
       "h": 0.02853
     },
     {
-      "id": 37,
+      "id": 26,
       "text": "rotten",
       "confidence": 0.9999,
       "low_conf": false,
@@ -873,7 +733,7 @@
       "h": 0.02352
     },
     {
-      "id": 41,
+      "id": 27,
       "text": "这个水果坏了",
       "confidence": 0.9999,
       "low_conf": false,
@@ -901,7 +761,7 @@
       "h": 0.0318
     },
     {
-      "id": 39,
+      "id": 28,
       "text": "The fruit is rotten.",
       "confidence": 0.9805,
       "low_conf": false,
@@ -929,7 +789,7 @@
       "h": 0.02583
     },
     {
-      "id": 42,
+      "id": 29,
       "text": "这个水果熟了可以吃了",
       "confidence": 1,
       "low_conf": false,
@@ -957,7 +817,7 @@
       "h": 0.02641
     },
     {
-      "id": 40,
+      "id": 30,
       "text": "The fruit is ripe and ready to eat.",
       "confidence": 0.9889,
       "low_conf": false,
@@ -985,8 +845,36 @@
       "h": 0.03797
     },
     {
-      "id": 3,
-      "text": "Fruit",
+      "id": 31,
+      "text": "水果",
+      "confidence": 0.7508,
+      "low_conf": true,
+      "points_norm": [
+        [
+          0.09454,
+          0.07806
+        ],
+        [
+          0.19243,
+          0.0798
+        ],
+        [
+          0.1914,
+          0.11777
+        ],
+        [
+          0.09351,
+          0.11604
+        ]
+      ],
+      "x": 0.09351,
+      "y": 0.07806,
+      "w": 0.09892,
+      "h": 0.03971
+    },
+    {
+      "id": 32,
+      "text": "fruit",
       "confidence": 0.7508,
       "low_conf": true,
       "points_norm": [

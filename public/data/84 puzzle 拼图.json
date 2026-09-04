@@ -2,8 +2,36 @@
   "image": "84 puzzle 拼图.png",
   "width": 3882,
   "height": 5188,
-  "text_count": 40,
+  "text_count": 20,
   "texts": [
+    {
+      "id": 1,
+      "text": "84",
+      "confidence": 1,
+      "low_conf": false,
+      "points_norm": [
+        [
+          0,
+          0
+        ],
+        [
+          0.09969,
+          0
+        ],
+        [
+          0.09969,
+          0.0478
+        ],
+        [
+          0,
+          0.0478
+        ]
+      ],
+      "x": 0,
+      "y": 0,
+      "w": 0.09969,
+      "h": 0.0478
+    },
     {
       "id": 2,
       "text": "关于拼图",
@@ -34,6 +62,34 @@
     },
     {
       "id": 3,
+      "text": "Puzzle",
+      "confidence": 1,
+      "low_conf": false,
+      "points_norm": [
+        [
+          0.08114,
+          0.07672
+        ],
+        [
+          0.2084,
+          0.07922
+        ],
+        [
+          0.20711,
+          0.11719
+        ],
+        [
+          0.07986,
+          0.11469
+        ]
+      ],
+      "x": 0.07986,
+      "y": 0.07672,
+      "w": 0.12854,
+      "h": 0.04048
+    },
+    {
+      "id": 4,
       "text": "可以教的英语",
       "confidence": 0.9999,
       "low_conf": false,
@@ -61,36 +117,8 @@
       "h": 0.07209
     },
     {
-      "id": 1,
-      "text": "84",
-      "confidence": 1,
-      "low_conf": false,
-      "points_norm": [
-        [
-          0,
-          0
-        ],
-        [
-          0.09969,
-          0
-        ],
-        [
-          0.09969,
-          0.0478
-        ],
-        [
-          0,
-          0.0478
-        ]
-      ],
-      "x": 0,
-      "y": 0,
-      "w": 0.09969,
-      "h": 0.0478
-    },
-    {
-      "id": 8,
-      "text": "你能找到边缘的 拼图块吗",
+      "id": 5,
+      "text": "你能找到边缘的拼图块吗",
       "confidence": 0.9999,
       "low_conf": false,
       "points_norm": [
@@ -117,7 +145,7 @@
       "h": 0.05551
     },
     {
-      "id": 4,
+      "id": 6,
       "text": "Can you find the edge pieces?",
       "confidence": 1,
       "low_conf": false,
@@ -145,7 +173,7 @@
       "h": 0.06862
     },
     {
-      "id": 9,
+      "id": 7,
       "text": "这块拼图放这里正好",
       "confidence": 0.9999,
       "low_conf": false,
@@ -173,7 +201,7 @@
       "h": 0.02814
     },
     {
-      "id": 7,
+      "id": 8,
       "text": "This piece fits here!",
       "confidence": 0.9994,
       "low_conf": false,
@@ -201,7 +229,7 @@
       "h": 0.03258
     },
     {
-      "id": 13,
+      "id": 9,
       "text": "边缘的",
       "confidence": 0.9999,
       "low_conf": false,
@@ -229,7 +257,7 @@
       "h": 0.02814
     },
     {
-      "id": 11,
+      "id": 10,
       "text": "edge",
       "confidence": 1,
       "low_conf": false,
@@ -257,7 +285,7 @@
       "h": 0.03508
     },
     {
-      "id": 14,
+      "id": 11,
       "text": "适合",
       "confidence": 1,
       "low_conf": false,
@@ -313,7 +341,7 @@
       "h": 0.02776
     },
     {
-      "id": 16,
+      "id": 13,
       "text": "这块放在这里",
       "confidence": 1,
       "low_conf": false,
@@ -341,7 +369,7 @@
       "h": 0.02602
     },
     {
-      "id": 15,
+      "id": 14,
       "text": "This piece goes here.",
       "confidence": 1,
       "low_conf": false,
@@ -369,7 +397,7 @@
       "h": 0.03392
     },
     {
-      "id": 18,
+      "id": 15,
       "text": "一步一步来解决",
       "confidence": 0.9946,
       "low_conf": false,
@@ -397,7 +425,7 @@
       "h": 0.0293
     },
     {
-      "id": 17,
+      "id": 16,
       "text": "Solve it step by step.",
       "confidence": 0.968,
       "low_conf": false,
@@ -425,7 +453,7 @@
       "h": 0.03238
     },
     {
-      "id": 20,
+      "id": 17,
       "text": "放这里",
       "confidence": 0.9985,
       "low_conf": false,
@@ -453,7 +481,7 @@
       "h": 0.02833
     },
     {
-      "id": 19,
+      "id": 18,
       "text": "go here",
       "confidence": 0.9434,
       "low_conf": false,
@@ -481,7 +509,7 @@
       "h": 0.03219
     },
     {
-      "id": 22,
+      "id": 19,
       "text": "解决",
       "confidence": 0.9991,
       "low_conf": false,
@@ -509,7 +537,7 @@
       "h": 0.02911
     },
     {
-      "id": 21,
+      "id": 20,
       "text": "solve",
       "confidence": 1,
       "low_conf": false,
@@ -537,7 +565,7 @@
       "h": 0.02564
     },
     {
-      "id": 24,
+      "id": 21,
       "text": "花费时间",
       "confidence": 0.9998,
       "low_conf": false,
@@ -565,7 +593,7 @@
       "h": 0.02718
     },
     {
-      "id": 23,
+      "id": 22,
       "text": "take time",
       "confidence": 1,
       "low_conf": false,
@@ -593,7 +621,7 @@
       "h": 0.02544
     },
     {
-      "id": 27,
+      "id": 23,
       "text": "再多几个",
       "confidence": 1,
       "low_conf": false,
@@ -621,7 +649,7 @@
       "h": 0.02968
     },
     {
-      "id": 25,
+      "id": 24,
       "text": "a few more",
       "confidence": 0.9993,
       "low_conf": false,
@@ -649,8 +677,8 @@
       "h": 0.02833
     },
     {
-      "id": 29,
-      "text": "如果需要时间 也没关系",
+      "id": 25,
+      "text": "如果需要时间也没关系",
       "confidence": 0.9999,
       "low_conf": false,
       "points_norm": [
@@ -705,7 +733,7 @@
       "h": 0.06476
     },
     {
-      "id": 33,
+      "id": 27,
       "text": "只剩几块了",
       "confidence": 0.9999,
       "low_conf": false,
@@ -733,7 +761,7 @@
       "h": 0.02699
     },
     {
-      "id": 31,
+      "id": 28,
       "text": "Just a few more pieces.",
       "confidence": 0.9998,
       "low_conf": false,
@@ -761,7 +789,7 @@
       "h": 0.03315
     },
     {
-      "id": 34,
+      "id": 29,
       "text": "几乎",
       "confidence": 1,
       "low_conf": false,
@@ -789,7 +817,7 @@
       "h": 0.02776
     },
     {
-      "id": 32,
+      "id": 30,
       "text": "almost",
       "confidence": 1,
       "low_conf": false,
@@ -817,7 +845,7 @@
       "h": 0.02795
     },
     {
-      "id": 36,
+      "id": 31,
       "text": "耐心",
       "confidence": 1,
       "low_conf": false,
@@ -845,7 +873,7 @@
       "h": 0.02853
     },
     {
-      "id": 35,
+      "id": 32,
       "text": "patience",
       "confidence": 0.9968,
       "low_conf": false,
@@ -873,7 +901,7 @@
       "h": 0.03412
     },
     {
-      "id": 38,
+      "id": 33,
       "text": "快完成了",
       "confidence": 0.9999,
       "low_conf": false,
@@ -901,7 +929,7 @@
       "h": 0.02872
     },
     {
-      "id": 37,
+      "id": 34,
       "text": "Almost done!",
       "confidence": 1,
       "low_conf": false,
@@ -929,8 +957,8 @@
       "h": 0.02814
     },
     {
-      "id": 40,
-      "text": "耐心是关键 (要有耐心)",
+      "id": 35,
+      "text": "耐心是关键（要有耐心）",
       "confidence": 0.9916,
       "low_conf": false,
       "points_norm": [
@@ -957,7 +985,7 @@
       "h": 0.03315
     },
     {
-      "id": 39,
+      "id": 36,
       "text": "Patience is the key.",
       "confidence": 1,
       "low_conf": false,
@@ -983,34 +1011,6 @@
       "y": 0.93485,
       "w": 0.24626,
       "h": 0.03219
-    },
-    {
-      "id": 5,
-      "text": "Puzzle",
-      "confidence": 1,
-      "low_conf": false,
-      "points_norm": [
-        [
-          0.08114,
-          0.07672
-        ],
-        [
-          0.2084,
-          0.07922
-        ],
-        [
-          0.20711,
-          0.11719
-        ],
-        [
-          0.07986,
-          0.11469
-        ]
-      ],
-      "x": 0.07986,
-      "y": 0.07672,
-      "w": 0.12854,
-      "h": 0.04048
     }
   ]
 }
